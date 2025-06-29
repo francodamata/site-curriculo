@@ -139,4 +139,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2000);
   });
    }
+  
+  const audio = document.getElementById("player");
+
+audio.addEventListener("ended", () => {
+  audio.currentTime = 23.3;
+  audio.play();
+});
 });
