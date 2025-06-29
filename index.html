@@ -1,59 +1,80 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Franco da Mata | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="terminal">
-    <p class="intro">franco@portfolio:~$ <span>cat sobre_mim.txt</span></p>
-    <section class="about">
-      <h1>Franco da Mata Perri Guimarães Cathalá</h1>
-      <p>Estudante do IFBA (Técnico em Química), programador e competidor premiado em olimpíadas acadêmicas e torneios de robótica. Apaixonado por tecnologia, ciência e inovação.</p>
-    </section><p class="intro">franco@portfolio:~$ <span>cat conquistas.txt</span></p>
-<section class="achievements">
-  <h2>🏅 Conquistas</h2>
-  <ul>
-    <li>Ouro na OBR (2024)</li>
-    <li>Prata na OBMEP Nacional (2021)</li>
-    <li>Menção Honrosa na OBMEP (2022, 2023, 2024)</li>
-    <li>Bronze na OBMEP Regional (2023, 2024)</li>
-    <li>1º Lugar na Bahia – OBI (2024, Nível 1º ano EM)</li>
-    <li>Bronze na OBA (2024)</li>
-    <li>2 Ouros, 1 Prata e 1 Bronze em competições de robótica</li>
-  </ul>
-</section>
+  <header class="header">
+    <div class="container">
+      <h1>Franco da Mata</h1>
+      <p>Estudante | Programador | Robótica | Olimpíadas Científicas</p>
+    </div>
+  </header>
 
-<p class="intro">franco@portfolio:~$ <span>cat formacao.txt</span></p>
-<section class="education">
-  <h2>🎓 Formação</h2>
-  <ul>
-    <li>Ensino Médio + Técnico em Química – IFBA (em andamento)</li>
-    <li>PIC Jr – OBMEP (16ª e 18ª Edição)</li>
-    <li>Cursos de Programação, Eletrônica e Robótica</li>
-  </ul>
-</section>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#sobre">Sobre</a>
+      <a href="#formacao">Formação</a>
+      <a href="#conquistas">Conquistas</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
 
-<p class="intro">franco@portfolio:~$ <span>cat experiencia.txt</span></p>
-<section class="experience">
-  <h2>🛠️ Experiência Técnica</h2>
-  <ul>
-    <li>Projetos com Arduino, ESP32 e sensores</li>
-    <li>Montagem de circuitos eletrônicos</li>
-    <li>Trabalho informal com elétrica e manutenção</li>
-  </ul>
-</section>
+  <main class="container">
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Sou estudante do IFBA, cursando o Técnico em Química integrado ao Ensino Médio. Apaixonado por tecnologia, programação, ciência e inovação. Atuo com desenvolvimento de projetos em robótica, programação e participei de diversas competições acadêmicas de destaque nacional.</p>
+    </section>
 
-<p class="intro">franco@portfolio:~$ <span>cat contato.txt</span></p>
-<section class="contact">
-  <h2>📞 Contato</h2>
-  <p>Email: <a href="mailto:francodamata200@gmail.com">francodamata200@gmail.com</a></p>
-  <p>WhatsApp: <a href="https://wa.me/5571992315715" target="_blank">(71) 99231-5715</a></p>
-</section>
+    <section id="formacao">
+      <h2>Formação</h2>
+      <ul>
+        <li>Ensino Médio + Técnico em Química – IFBA (em andamento)</li>
+        <li>PIC Jr – OBMEP (16ª e 18ª Edição)</li>
+        <li>Cursos de Programação, Eletrônica e Robótica</li>
+      </ul>
+    </section>
 
-  </div>
+    <section id="conquistas">
+      <h2>Conquistas</h2>
+      <ul>
+        <li>Ouro na OBR (2024)</li>
+        <li>Prata na OBMEP Nacional (2021)</li>
+        <li>Menções Honrosas na OBMEP (2022, 2023, 2024)</li>
+        <li>Bronzes Regionais na OBMEP (2023, 2024)</li>
+        <li>1º Lugar na Bahia – OBI (2024)</li>
+        <li>Bronze na OBA (2024)</li>
+        <li>Multimedalhista em Robótica: 2 Ouros, 1 Prata e 1 Bronze</li>
+      </ul>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiência Técnica</h2>
+      <ul>
+        <li>Projetos com Arduino, ESP32 e sensores diversos</li>
+        <li>Montagem de circuitos eletrônicos e programação embarcada</li>
+        <li>Trabalho prático com elétrica e manutenção</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:francodamata200@gmail.com">francodamata200@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5571992315715">(71) 99231-5715</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Franco da Mata. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
