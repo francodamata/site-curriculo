@@ -1,21 +1,19 @@
 // script.js
 
-document.addEventListener("DOMContentLoaded", () => { const lines = document.querySelectorAll(".terminal > *"); let delay = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("main section");
 
-lines.forEach((line, i) => { const original = line.innerHTML; line.innerHTML = ""; line.style.visibility = "visible";
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate");
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
 
-setTimeout(() => {
-  let index = 0;
-  const typing = setInterval(() => {
-    line.innerHTML = original.slice(0, index++) + '<span class="cursor">|</span>';
-    if (index > original.length) {
-      clearInterval(typing);
-      line.innerHTML = original;
-    }
-  }, 10);
-}, delay);
-
-delay += 500 + original.length * 10;
-
-}); });
-
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+});
