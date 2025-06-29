@@ -111,7 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
     clearInterval(autoPlayInterval);
     startAutoPlay();
   }
-
+    
+    
   nextBtn.addEventListener("click", nextSlide);
   prevBtn.addEventListener("click", prevSlide);
   carousel.addEventListener("mouseenter", () => isPaused = true);
@@ -127,4 +128,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateCarousel();
   startAutoPlay();
+    
+   function copyToClipboard(elementId, button) {
+  const text = document.getElementById(elementId).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const originalText = button.innerHTML;
+    button.innerHTML = "✅ Copiado!";
+    setTimeout(() => {
+      button.innerHTML = originalText;
+    }, 2000);
+  });
+   }
 });
